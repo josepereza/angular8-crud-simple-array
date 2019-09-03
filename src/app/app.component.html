@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <nav>
+    <a href="/">Angular Crud</a>
+  </nav>
+  <ul>
+    <li *ngFor="let employee of employeeArray" (click)="forEdit(employee)" [class.active]="employee ==selectedEmployee">
+      {{employee.name}} - {{employee.country}}
+    </li>
+    
+  </ul>
+  <div>
+    <h1>Insert a nuew Employee</h1>
+  </div>
+  <div>
+    <input type="text" [(ngModel)]="selectedEmployee.name" placeholder="Enter Name">
+  </div>
+  <div>
+      <input type="text" [(ngModel)]="selectedEmployee.country" placeholder="Enter Country">
+  </div>
+  <button (click)="addOrEdit()">
+    Submit
+  </button>
+  <button *ngIf="selectedEmployee.id !==0" (click)="delete()">
+    Delete
+  </button>
+</body>
+</html>
