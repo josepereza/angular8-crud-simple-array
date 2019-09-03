@@ -1,0 +1,54 @@
+.lista{
+        
+        width: 50vw;
+        background-color: #ffffff;
+        border: solid .1rem #000000;
+        padding: 2rem;
+        border-radius: .5rem;
+
+    }ul li{
+        all: unset;
+        display: flex;
+        flex-direction: row;
+    }
+
+nav {
+    text-align: center;
+    background: rgb(94, 94, 219);
+    padding: .5rem;
+    a{
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 2rem;
+        
+    }
+}
+.forms{
+    width: 50vw;
+    input{
+        all: unset;
+        background-color: #ffffff;
+        margin-top: .5rem;
+        padding: .3rem;
+        border: solid .1rem #000000;
+        border-radius: .4rem;
+    }
+    button{
+        
+        all: unset;
+        color: #ffffff;
+        margin-top: .5rem;
+        margin-right: .5rem;
+        padding: .3rem;
+        border-radius: .3rem;
+        background-color: rgb(41, 158, 30);
+    }button:hover{
+        background-color: rgb(129, 240, 119);
+        transition: ease .3s;
+    }.borrar{
+        background-color: rgb(241, 70, 70);
+    }.borrar:hover{
+        background-color: rgb(247, 174, 174);
+        transition: ease .3s;
+    }
+}
